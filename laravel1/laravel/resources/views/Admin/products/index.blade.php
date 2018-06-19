@@ -49,7 +49,6 @@
                             <td><span class="price">{{ $product->likes }}</span></td>
                             <td class="td-status">
                                 {!! $productPresenter->getAliveSpan($product->is_alive) !!}
-                                {!! $productPresenter->getHotSpan($product->is_hot) !!}
                             </td>
                             <td class="td-manage">
                                 @if ($productPresenter->isAlive($product->is_alive))

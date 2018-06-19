@@ -61,31 +61,17 @@
 
                     <!--各种规格-->
                     <dl class="iteminfo_parameter sys_item_specpara">
-                        {{--<dt class="theme-login"><div class="cart-title">可选规格<span class="am-icon-angle-right"></span></div></dt>--}}
                         <dd>
                             <!--操作页面-->
 
-                            {{--<div class="theme-popover-mask"></div>--}}
 
                             <div class="theme-popover">
-                                {{--<div class="theme-span"></div>--}}
-                                {{--<div class="theme-poptit">
-                                    <a href="javascript:;" title="关闭" class="close">×</a>
-                                </div>--}}
+
                                 <div class="theme-popbod dform">
                                     <form class="theme-signin" name="" action="" method="post">
 
                                         <div class="theme-signin-left">
-                                            {{--@foreach ($product->productAttributes()->get()->groupBy('attribute')->toArray() as $item => $attrs)
-                                                <div class="theme-options">
-                                                    <div class="cart-title">{{ $item }}</div>
-                                                    <ul>
-                                                        @foreach ($attrs as $key => $attr)
-                                                            <li title="价格浮动 {{ $attr['markup'] }}" class="sku-line {{ $key == 0 ? 'selected' : '' }}">{{ $attr['items'] }}<i></i></li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endforeach--}}
+
                                             <div class="theme-options">
                                                 <div class="cart-title number">数量</div>
                         <dd>
@@ -174,8 +160,8 @@
                             <div class="p-img">
                                 <a href="{{ url("/home/products/{$recommendProduct->id}") }}">
                                     <img class="media-object" src="{{ $productPresenter->getThumbLink($recommendProduct->thumb) }}" alt="{{ $recommendProduct->name }}" width="80">
-                                </a>
-                            </div>
+                            </div>                                </a>
+
                             <div class="p-name"><a href="{{ url("/home/products/{$recommendProduct->id}") }}">
                                     {{ $recommendProduct->name }}
                                 </a>
