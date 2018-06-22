@@ -1,9 +1,4 @@
-	 /*
-      * Jquery—addShopping   0.1
-      * Copyright (c) 2016  随风丶小柏     QQ：1101470551
-      * Date: 2016-08-12
-      * 使用Jquery—shopping实现一个简单的加入购物车效果
-	 */
+
 (function($){
 	var defaults = {
 		endElement:"",
@@ -48,9 +43,7 @@
 						}
 				},
 				addIcon:function(){
-					if ($options.iconImg=="" || $options.iconImg==null) {
-						throw new Error("样式图片必须填上");
-					} 
+
 					var icon = '<div id="cartIcon" style="width:50px;height:50px;padding:2px;background:#fff;border:solid 5px #e54144;overflow:hidden;position:absolute;z-index:890;'+$options.iconCSS+'"><img src="'+$options.iconImg+'" width="50" height="50" /></div>';
 					return icon;
 				}

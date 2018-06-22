@@ -98,39 +98,38 @@
     <div class="clear"></div>
     <!--活动	-->
 
-
     <div class="pay">
         <div class="pay-opt">
             <a href="{{ url('/') }}"><span class="am-icon-home am-icon-fw">首页</span></a>
             @auth
-            @if ($product->users()->where('user_id', \Auth::user()->id)->count() > 0)
-                <a href="javascript:;" style="display: none" id="likes_btn"><span class="am-icon-heart am-icon-fw" >收藏</span></a>
-                <a href="javascript:;"  id="de_likes_btn"><span class="am-icon-heart am-icon-fw">取消收藏</span></a>
-            @else
-                <a href="javascript:;"  id="likes_btn"><span class="am-icon-heart am-icon-fw">收藏</span></a>
-                <a href="javascript:;" style="display: none" id="de_likes_btn"><span class="am-icon-heart am-icon-fw" >取消收藏</span></a>
-            @endif
+                @if ($product->users()->where('user_id', \Auth::user()->id)->count() > 0)
+                    <a href="javascript:;" style="display: none" id="likes_btn"><span class="am-icon-heart am-icon-fw" >收藏</span></a>
+                    <a href="javascript:;"  id="de_likes_btn"><span class="am-icon-heart am-icon-fw">取消收藏</span></a>
+                @else
+                    <a href="javascript:;"  id="likes_btn"><span class="am-icon-heart am-icon-fw">收藏</span></a>
+                    <a href="javascript:;" style="display: none" id="de_likes_btn"><span class="am-icon-heart am-icon-fw" >取消收藏</span></a>
+                @endif
             @endauth
 
             @guest
-            <a href="javascript:;"  id="likes_btn"><span class="am-icon-heart am-icon-fw">收藏</span></a>
+                <a href="javascript:;"  id="likes_btn"><span class="am-icon-heart am-icon-fw">收藏</span></a>
             @endguest
 
         </div>
         <li>
             <div class="clearfix tb-btn" id="nowBug">
                 @auth
-                <a  href="javascript:;" >立即购买</a>
+                    <a  href="javascript:;" >立即购买</a>
                 @endauth
                 @guest
-                <a href="{{ url('login') }}?redirect_url={{ url()->current() }}">立即购买</a>
+                    <a href="{{ url('login') }}?redirect_url={{ url()->current() }}">立即购买</a>
                 @endguest
 
             </div>
         </li>
         <li>
             <div class="clearfix tb-btn tb-btn-basket">
-                <a  title="加入订单" href="javascript:;"  id="addCar"><i></i>加入订单</a>
+                <a  title="加入购物车" href="javascript:;"  id="addCar"><i></i>加入购物车</a>
             </div>
         </li>
     </div>
@@ -196,7 +195,7 @@
 
                     </div>
 
-                   {
+
 
                 </div>
 
